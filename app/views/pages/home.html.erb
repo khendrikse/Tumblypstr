@@ -36,10 +36,10 @@
   pictures = Array.new
 
   # Now we start a loop that continues until a certain amount (equal or bigger than...) of pictures is taken out of the tumblr posts.
-  until pictures.length >= 100
+  until pictures.length >= 30
 
     # Make the request and assigns this to the variable posts
-    posts = client.tagged search_tag, :before => @timestamp ,:limit => 20
+    posts = client.tagged search_tag, :before => @timestamp ,:limit => 30
 
     # This makes sure that the program knows what the last timestamp is. Otherwise you would get the same 20 pictures
     @timestamp = posts.last["timestamp"]
@@ -65,7 +65,7 @@
   end
 
   # starts a loop until the length of the pictures array is 100
-  until pictures.length == 100
+  until pictures.length == 30
     # pops off items in the pictures array
     pictures.pop
   # ends the until loop
