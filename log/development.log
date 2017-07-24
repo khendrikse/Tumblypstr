@@ -592,3 +592,11 @@ Processing by PagesController#show as HTML
 Completed 200 OK in 357ms (Views: 345.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-24 14:55:44 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 451ms (Views: 438.1ms | ActiveRecord: 0.0ms)
+
+
