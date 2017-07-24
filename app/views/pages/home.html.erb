@@ -1,0 +1,72 @@
+<!--
+  This is the form that asks the visitor to
+  enter a keyword to search with on Tumblr.
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="twelve columns">
+      <div class="six columns offset-by-three" id="search_box">
+        <form action="/">
+          <center>
+            <h4>Search Tumblr</h4>
+            <input type="text" name="tumblrSearch"><br>
+            <input type="submit">
+          </center>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% search_tag = params[:tumblrSearch] %>
+<% if search_tag != nil %>
+<%
+  # Gives authentication to tumblr through consumer key.
+  client = Tumblr::Client.new :consumer_key => ENV['TUMBLR_CONSUMER_KEY']
+
+  pictures = Array.new
+
+  until pictures.length >= 100
+  posts = client.tagged search_tag, :before => @timestamp ,:limit => 20
+  @timestamp = posts.last["timestamp"]
+
+  posts.each do |post|
+    if post["photos"]
+      post["photos"].each do |picture|
+        item = picture["original_size"]["url"]
+        pictures.push(item)
+
+      end
+    end
+  end
+  end
+  until pictures.length == 100
+    pictures.pop
+  end
+  puts search_tag
+  puts "YAS"
+  %>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" id="yay_message">
+        <h3>Yay! Here are your pictures!</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" id="pictures_box">
+        <center>
+        <% pictures.each do |image| %>
+          <%= image_tag(image, class: "pictures")%>
+        <% end %>
+      </center>
+      </div>
+    </div>
+  </div>
+
+<%
+
+end
+%>

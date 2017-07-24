@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tumblyposter</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag 'application', 'style1.css', 'normalize', 'skeleton', 'style', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'modernizr.custom.86080'=> true %>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <ul class="cb-slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>Image 04</span></li>
+        <li><span>Image 05</span></li>
+        <li><span>Image 06</span></li>
+    </ul>
+  <div class="topnav">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <a href="/"><img class="three columns" src="/images/tumbly_logo.png"></a>
+          <h5 id="subtitle" class="eight columns">Create your own tumblr poster!</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+    <%= yield %>
+
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>
