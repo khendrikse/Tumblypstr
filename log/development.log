@@ -600,3 +600,19 @@ Processing by PagesController#show as HTML
 Completed 200 OK in 451ms (Views: 438.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-25 11:50:09 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 454ms (Views: 440.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?tumblrSearch=puppy" for 127.0.0.1 at 2017-07-25 11:50:14 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"puppy", "page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (69960.8ms)
+Completed 200 OK in 70015ms (Views: 70012.1ms | ActiveRecord: 0.0ms)
+
+
