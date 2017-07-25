@@ -52,8 +52,12 @@
         post["photos"].each do |picture|
           # searches the picture item for "original_size" and searches the "original_size" for "url". then it takes this url and puts it into the item variable.
           item = picture["original_size"]["url"]
-          # pushes the content of item (the url) to the array called pictures.
-          pictures.push(item)
+          # condition of the image being a jpg or png
+          if item.include? ("jpg" || "png")
+            # pushes the content of item (the url) to the array called pictures.
+            pictures.push(item)
+          # ends the if block
+          end
         # ends the block of each
         end
       # ends the block of if
