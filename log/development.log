@@ -1716,3 +1716,11 @@ Processing by PagesController#show as HTML
 Completed 200 OK in 1482ms (Views: 1481.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/?tumblrSearch=harrypotter" for 127.0.0.1 at 2017-07-26 22:14:16 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"harrypotter", "page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (787.9ms)
+Completed 200 OK in 1172ms (Views: 1158.4ms | ActiveRecord: 0.0ms)
+
+
