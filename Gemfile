@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
+#use wicked and wkhtmltopdf-binary to generate a pdf
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+#use tumblr_client
 gem 'tumblr_client'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
