@@ -1724,3 +1724,51 @@ Processing by PagesController#show as HTML
 Completed 200 OK in 1172ms (Views: 1158.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-26 22:29:27 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 428ms (Views: 413.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?tumblrSearch=%23harry" for 127.0.0.1 at 2017-07-26 22:29:39 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"#harry", "page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2230.2ms)
+Completed 200 OK in 2297ms (Views: 2296.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?tumblrSearch=%23harry" for 127.0.0.1 at 2017-07-26 22:30:15 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"#harry", "page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1178.4ms)
+Completed 200 OK in 1284ms (Views: 1283.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-26 22:30:41 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 78ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-26 22:30:43 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?tumblrSearch=thingy" for 127.0.0.1 at 2017-07-26 22:30:47 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"thingy", "page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2157.9ms)
+Completed 200 OK in 2196ms (Views: 2195.8ms | ActiveRecord: 0.0ms)
+
+

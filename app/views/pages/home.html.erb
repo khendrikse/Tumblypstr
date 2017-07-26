@@ -85,6 +85,9 @@ window.onload = function() {
 
 <!-- This indicates that if the search_tag is not empty, it starts to run the script -->
 <% if search_tag != nil %>
+<% if search_tag.include? "#"
+    search_tag.tr_s!('#', '')
+  end%>
 
 <!-- This is the script that grabs the pictures from Tumblr. MAYBE PUT THIS IN ANOTHER PLACE IN RAILS? -->
 <%
