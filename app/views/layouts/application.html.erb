@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tumblyposter</title>
+    <title>TumblyPstr</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag 'application', 'style1.css', 'normalize', 'skeleton', 'style', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'modernizr.custom.86080'=> true %>
+    <%= stylesheet_link_tag 'application', 'slideshow', 'normalize', 'skeleton', 'overall_style', media: 'all', 'data-turbolinks-track': 'reload' -%>
+    <%= javascript_include_tag 'application', 'text_animation.js', 'data-turbolinks-track': 'reload' %>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
   </head>
-
   <body>
-
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <ul class="cb-slideshow">
@@ -25,16 +23,14 @@
     <div class="container">
       <div class="row">
         <div class="twelve columns">
-          <a href="/"><img class="three columns" src="/images/tumbly_logo.png"></a>
+          <%= link_to image_tag("tumbly_logo.png", :class => 'three columns'), "/" %>
           <h5 id="subtitle" class="eight columns">Live your fandom</h5>
         </div>
       </div>
     </div>
   </div>
     <%= yield %>
-
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
 </body>
 </html>
