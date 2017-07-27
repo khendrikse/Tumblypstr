@@ -51,7 +51,7 @@
     line-height: 200px;
 }
 .cb-slideshow li:nth-child(1) span {
-    background-image: url(images/picture1.gif);
+    background-image: url(picture1.gif);
 }
 .cb-slideshow li:nth-child(2) span {
     background-image: url(picture2.gif);
