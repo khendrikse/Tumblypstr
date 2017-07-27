@@ -7,8 +7,7 @@ class PagesController < ApplicationController
       end
       format.pdf do
         render :pdf => "file_name",
-        :template => 'pages/home.html.erb',
-        :layout => 'application.html.erb',
+        :template => 'pages/poster.html.erb',
         :disposition => 'attachment',
         :orientation => 'Portrait',
         :page_size => 'a3',

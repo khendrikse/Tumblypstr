@@ -1,0 +1,21 @@
+<% @search_tag = params[:tumblrSearch] %>
+<% pictures = PagesController.poster(@search_tag)%>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" id="yay_message">
+        <h3>Yay! Here are your pictures!
+        <%= link_to "Get pdf", format: :pdf, :tumblrSearch => @search_tag %></h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" id="pictures_box">
+        <center>
+        <% pictures.each do |image| %>
+          <%= image_tag(image, class: "pictures")%>
+        <% end %>
+      </center>
+      </div>
+    </div>
+  </div>
