@@ -32,63 +32,10 @@
 <!-- This is where the Ruby comes in -->
 
 <!-- Would like to figure out exactly how this line works -->
-<% search_tag = params[:tumblrSearch] %>
-
+<% @search_tag = params[:tumblrSearch] %>
 <!-- This indicates that if the search_tag is not empty, it starts to run the script -->
-<% if search_tag != nil %>
-<% if search_tag.include? "#"
-    search_tag.tr_s!('#', '')
-  end%>
-
-<!-- This is the script that grabs the pictures from Tumblr. MAYBE PUT THIS IN ANOTHER PLACE IN RAILS? -->
-<%
-  # Authenticate via API Key
-  client = Tumblr::Client.new :consumer_key => ENV['TUMBLR_CONSUMER_KEY']
-
-  # Create a new variable with a new array inside
-  pictures = Array.new
-
-  # Now we start a loop that continues until a certain amount (equal or bigger than...) of pictures is taken out of the tumblr posts.
-  until pictures.length >= 30
-
-    # Make the request and assigns this to the variable posts
-    posts = client.tagged search_tag, :before => @timestamp ,:limit => 30
-
-    # This makes sure that the program knows what the last timestamp is. Otherwise you would get the same 20 pictures
-    @timestamp = posts.last["timestamp"]
-
-    # takes each item out of the variable posts. each item is assigned the variable post
-    posts.each do |post|
-      # if the post contains the element "photos"
-      if post["photos"]
-        # takes each post that has the element "photo" and assign it to the variable picture
-        post["photos"].each do |picture|
-          # searches the picture item for "original_size" and searches the "original_size" for "url". then it takes this url and puts it into the item variable.
-          item = picture["original_size"]["url"]
-          # condition of the image being a jpg or png
-          if item.include? ("jpg" || "png")
-            # pushes the content of item (the url) to the array called pictures.
-            pictures.push(item)
-          # ends the if block
-          end
-        # ends the block of each
-        end
-      # ends the block of if
-      end
-    # Ends the each of posts
-    end
-
-  # Ends the loop of until
-  end
-
-  # starts a loop until the length of the pictures array is 100
-  until pictures.length == 30
-    # pops off items in the pictures array
-    pictures.pop
-  # ends the until loop
-  end
-  %>
-
+<% if @search_tag != nil %>
+<% pictures = PagesController.poster(@search_tag)%>
   <div class="container">
     <div class="row">
       <div class="twelve columns" id="yay_message">
@@ -107,6 +54,4 @@
       </div>
     </div>
   </div>
-<%
-end
-%>
+<% end %>

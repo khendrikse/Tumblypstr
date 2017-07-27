@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def show
+    @search_tag = ""
     respond_to do |format|
       format.html do
         render template: "pages/#{params[:page]}"
@@ -26,5 +27,35 @@ class PagesController < ApplicationController
                 }
       end
     end
+  end
+
+  def self.poster(tag)
+    if tag.include? "#"
+        tag.tr_s!('#', '')
+    end
+
+    client = Tumblr::Client.new :consumer_key => ENV['TUMBLR_CONSUMER_KEY']
+
+    pictures = Array.new
+
+    until pictures.length >= 30
+      posts = client.tagged tag, :before => @timestamp ,:limit => 30
+      @timestamp = posts.last["timestamp"]
+      posts.each do |post|
+        if post["photos"]
+          post["photos"].each do |picture|
+            item = picture["original_size"]["url"]
+            if item.include? ("jpg" || "png")
+              pictures.push(item)
+            end
+          end
+        end
+      end
+    end
+
+    until pictures.length == 30
+      pictures.pop
+    end
+    return pictures
   end
 end
