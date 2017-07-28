@@ -5,7 +5,6 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= wicked_pdf_stylesheet_link_tag 'normalize', 'skeleton', 'poster', media: 'all', 'data-turbolinks-track': 'reload' -%>
-    <%= wicked_pdf_javascript_include_tag 'application', 'text_animation.js', 'data-turbolinks-track': 'reload' %>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -32,7 +31,7 @@
           <%= wicked_pdf_image_tag(image, class: "pictures")%>
         <% end %>
         </center>
-        <%= wicked_pdf_image_tag("created_with.png", style:"height: 119px; width:119px ;") %>
+        <%= image_tag image_url('created_with.png') %>
       </div>
     </div>
   </div>
