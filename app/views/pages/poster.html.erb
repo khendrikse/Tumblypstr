@@ -1,21 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TumblyPstr</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= wicked_pdf_stylesheet_link_tag 'normalize', 'skeleton', 'poster', media: 'all', 'data-turbolinks-track': 'reload' -%>
+    <%= wicked_pdf_javascript_include_tag 'application', 'text_animation.js', 'data-turbolinks-track': 'reload' %>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
 <% @search_tag = params[:tumblrSearch] %>
 <% pictures = PagesController.poster(@search_tag)%>
   <div class="container">
     <div class="row">
       <div class="twelve columns" id="yay_message">
-        <h3>Yay! Here are your pictures!
         <%= link_to "Get pdf", format: :pdf, :tumblrSearch => @search_tag %></h3>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
+      <div class="twelve columns" id="zoekwoord">
+        <% if @search_tag.include? " "
+            @search_tag.tr_s!(' ', '')
+          end %>
+        <span>#<%=@search_tag %></span>
+      </div>
       <div class="twelve columns" id="pictures_box">
         <center>
         <% pictures.each do |image| %>
-          <%= image_tag(image, class: "pictures")%>
+          <%= wicked_pdf_image_tag(image, class: "pictures")%>
         <% end %>
       </center>
       </div>
     </div>
   </div>
+</body>
+</html>

@@ -2,12 +2,6 @@ body {
   background-color: #00C7B8;
 }
 
-#pictures_box {
-  background-color: #ffffff;
-  border-radius: 10px 10px 10px 10px;
-  margin-top: 2%;
-  padding: 40px;
-}
 #search_box {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
@@ -26,19 +20,4 @@ body {
   color: #5B5B5B;
   margin-top: 13px;
   text-align: right;
-}
-
-#yay_message {
-  margin-top: 2%;
-  text-align: center;
-  margin-bottom: 0;
-  font-family: 'Pacifico', cursive;
-}
-
-
-.pictures {
-  float: left;
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
 }
