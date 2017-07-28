@@ -13,10 +13,11 @@ class PagesController < ApplicationController
         :page_size => 'a3',
         #:page_height => '5cm',
         #:page_width => '5cm',
-        :disable_javascript => false,
+        :disable_javascript => true,
         :encoding => 'utf8',
         :background => true,
-        :enable_plugins => true,
+        :dpi => '72',
+        :enable_plugins => false,
         :disable_smart_shrinking => true,
         :show_as_html => params.key?('debug'),
         margin: { top: '0mm',
@@ -43,7 +44,7 @@ class PagesController < ApplicationController
       posts.each do |post|
         if post["photos"]
           post["photos"].each do |picture|
-            item = picture["original_size"]["url"]
+            item = picture["alt_sizes"][2]["url"]
             if item.include? ("jpg" || "png")
               pictures.push(item)
             end

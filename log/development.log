@@ -11840,3 +11840,565 @@ Sent data file_name.pdf (1.0ms)
 Completed 200 OK in 59320ms (Views: 0.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:24:30 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 477ms (Views: 462.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=days+of+code" for 127.0.0.1 at 2017-07-28 14:24:35 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"days of code", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (303.2ms)
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     9:     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
+    10:   </head>
+    11:   <body>
+    12: <% @search_tag = params[:tumblrSearch] %>
+    13: <% pictures = PagesController.poster(@search_tag)%>
+    14:   <div class="container">
+    15:     <div class="row">
+  
+app/controllers/pages_controller.rb:42:in `poster'
+app/views/pages/poster.html.erb:12:in `_app_views_pages_poster_html_erb___123073191472997908_70289934019860'
+app/controllers/pages_controller.rb:6:in `block (2 levels) in show'
+app/controllers/pages_controller.rb:4:in `show'
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.0ms)
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:24:39 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kittens" for 127.0.0.1 at 2017-07-28 14:24:47 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kittens", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (1830.3ms)
+Completed 200 OK in 1893ms (Views: 1892.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:25:46 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:25:55 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 14:26:07 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (4769.7ms)
+Completed 200 OK in 4804ms (Views: 4803.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:27:15 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 124ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=" for 127.0.0.1 at 2017-07-28 14:28:29 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (248.6ms)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `last' for #<Hash:0x007fdb4c496248>):
+     9:     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
+    10:   </head>
+    11:   <body>
+    12: <% @search_tag = params[:tumblrSearch] %>
+    13: <% pictures = PagesController.poster(@search_tag)%>
+    14:   <div class="container">
+    15:     <div class="row">
+  
+app/controllers/pages_controller.rb:42:in `poster'
+app/views/pages/poster.html.erb:12:in `_app_views_pages_poster_html_erb___123073191472997908_70289927957620'
+app/controllers/pages_controller.rb:6:in `block (2 levels) in show'
+app/controllers/pages_controller.rb:4:in `show'
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.8ms)
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:28:32 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+Started GET "/" for 127.0.0.1 at 2017-07-28 14:28:32 +0200
+  Rendering pages/home.html.erb within layouts/application
+Processing by PagesController#show as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 87ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:01:08 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 461ms (Views: 447.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:01:32 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (2516.6ms)
+Completed 200 OK in 2570ms (Views: 2566.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:02:40 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 421ms (Views: 409.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kiten" for 127.0.0.1 at 2017-07-28 17:02:45 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kiten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (725.1ms)
+Completed 500 Internal Server Error in 731ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+     9:     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
+    10:   </head>
+    11:   <body>
+    12: <% @search_tag = params[:tumblrSearch] %>
+    13: <% pictures = PagesController.poster(@search_tag)%>
+    14:   <div class="container">
+    15:     <div class="row">
+  
+app/controllers/pages_controller.rb:46:in `[]'
+app/controllers/pages_controller.rb:46:in `block (2 levels) in poster'
+app/controllers/pages_controller.rb:45:in `each'
+app/controllers/pages_controller.rb:45:in `block in poster'
+app/controllers/pages_controller.rb:43:in `each'
+app/controllers/pages_controller.rb:43:in `poster'
+app/views/pages/poster.html.erb:12:in `_app_views_pages_poster_html_erb__121906425609859414_70307014050860'
+app/controllers/pages_controller.rb:6:in `block (2 levels) in show'
+app/controllers/pages_controller.rb:4:in `show'
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.0ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (126.6ms)
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:02:48 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 179ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:02:50 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (474.4ms)
+Completed 500 Internal Server Error in 480ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+     9:     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
+    10:   </head>
+    11:   <body>
+    12: <% @search_tag = params[:tumblrSearch] %>
+    13: <% pictures = PagesController.poster(@search_tag)%>
+    14:   <div class="container">
+    15:     <div class="row">
+  
+app/controllers/pages_controller.rb:46:in `[]'
+app/controllers/pages_controller.rb:46:in `block (2 levels) in poster'
+app/controllers/pages_controller.rb:45:in `each'
+app/controllers/pages_controller.rb:45:in `block in poster'
+app/controllers/pages_controller.rb:43:in `each'
+app/controllers/pages_controller.rb:43:in `poster'
+app/views/pages/poster.html.erb:12:in `_app_views_pages_poster_html_erb__121906425609859414_70307009341320'
+app/controllers/pages_controller.rb:6:in `block (2 levels) in show'
+app/controllers/pages_controller.rb:4:in `show'
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.9ms)
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:26:27 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 418ms (Views: 406.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:26:31 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (2519.3ms)
+Completed 200 OK in 2557ms (Views: 2555.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:27:14 +0200
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:27:24 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (1947.2ms)
+Completed 200 OK in 2011ms (Views: 2010.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:27:47 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 511ms (Views: 496.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:27:50 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:27:53 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (1788.6ms)
+Completed 500 Internal Server Error in 1794ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     9:     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
+    10:   </head>
+    11:   <body>
+    12: <% @search_tag = params[:tumblrSearch] %>
+    13: <% pictures = PagesController.poster(@search_tag)%>
+    14:   <div class="container">
+    15:     <div class="row">
+  
+app/controllers/pages_controller.rb:46:in `block (2 levels) in poster'
+app/controllers/pages_controller.rb:45:in `each'
+app/controllers/pages_controller.rb:45:in `block in poster'
+app/controllers/pages_controller.rb:43:in `each'
+app/controllers/pages_controller.rb:43:in `poster'
+app/views/pages/poster.html.erb:12:in `_app_views_pages_poster_html_erb___234704479443639957_70359126887820'
+app/controllers/pages_controller.rb:6:in `block (2 levels) in show'
+app/controllers/pages_controller.rb:4:in `show'
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.8ms)
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:28:25 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (2185.8ms)
+Completed 200 OK in 2311ms (Views: 2298.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:28:34 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 54ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=puppy" for 127.0.0.1 at 2017-07-28 17:28:50 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"puppy", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (2572.5ms)
+Completed 200 OK in 2638ms (Views: 2637.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster.pdf?tumblrSearch=puppy" for 127.0.0.1 at 2017-07-28 17:29:04 +0200
+Processing by PagesController#show as PDF
+  Parameters: {"tumblrSearch"=>"puppy", "page"=>"poster"}
+***************WICKED***************
+  Rendering pages/poster.html.erb
+  Rendered pages/poster.html.erb (2961.6ms)
+  Rendering text template
+  Rendered text template (0.1ms)
+Sent data file_name.pdf (5.7ms)
+Completed 200 OK in 113162ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:31:12 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:31:15 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (5230.6ms)
+Completed 200 OK in 5290ms (Views: 5288.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster.pdf?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:31:28 +0200
+Processing by PagesController#show as PDF
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+***************WICKED***************
+  Rendering pages/poster.html.erb
+  Rendered pages/poster.html.erb (2696.0ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data file_name.pdf (1.2ms)
+Completed 200 OK in 24161ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:33:12 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:33:22 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 499ms (Views: 486.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:33:30 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (2764.3ms)
+Completed 200 OK in 2806ms (Views: 2804.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:33:51 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 118ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=puppy" for 127.0.0.1 at 2017-07-28 17:33:58 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"puppy", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (5886.0ms)
+Completed 200 OK in 5957ms (Views: 5955.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster.pdf?tumblrSearch=puppy" for 127.0.0.1 at 2017-07-28 17:34:07 +0200
+Processing by PagesController#show as PDF
+  Parameters: {"tumblrSearch"=>"puppy", "page"=>"poster"}
+***************WICKED***************
+  Rendering pages/poster.html.erb
+  Rendered pages/poster.html.erb (2604.0ms)
+Completed 500 Internal Server Error in 3902ms (ActiveRecord: 0.0ms)
+
+
+  
+RuntimeError (Failed to execute:
+["/Users/karinhendrikse/.rbenv/versions/2.3.1/bin/wkhtmltopdf", "-q", "--encoding", "utf8", "--disable-javascript", "--disable-smart-shrinking", "--orientation", "Portrait", "--dpi", "75dpi", "--page-size", "a3", "--margin-top", "0mm", "--margin-bottom", "0mm", "--margin-left", "0mm", "--margin-right", "0mm", "file:////var/folders/8n/y2fq41z92757_5_sldjxbx9w0000gn/T/wicked_pdf20170728-9379-1mrrl95.html", "/var/folders/8n/y2fq41z92757_5_sldjxbx9w0000gn/T/wicked_pdf_generated_file20170728-9379-upyi5r.pdf"]
+Error: PDF could not be generated!
+ Command Error: Invalid argument(s) parsed to --dpi
+
+Name:
+  wkhtmltopdf 0.12.3 (with patched qt)
+
+Synopsis:
+  wkhtmltopdf [GLOBAL OPTION]... [OBJECT]... <output file>
+  
+Document objects:
+  wkhtmltopdf is able to put several objects into the output file, an object is
+  either a single webpage, a cover webpage or a table of content.  The objects
+  are put into the output document in the order they are specified on the
+  command line, options can be specified on a per object basis or in the global
+  options area. Options from the Global Options section can only be placed in
+  the global options area
+
+  A page objects puts the content of a singe webpage into the output document.
+
+  (page)? <input url/file name> [PAGE OPTION]...
+  Options for the page object can be placed in the global options and the page
+  options areas. The applicable options can be found in the Page Options and 
+  Headers And Footer Options sections.
+
+  A cover objects puts the content of a singe webpage into the output document,
+  the page does not appear in the table of content, and does not have headers
+  and footers.
+
+  cover <input url/file name> [PAGE OPTION]...
+  All options that can be specified for a page object can also be specified for
+  a cover.
+
+  A table of content object inserts a table of content into the output document.
+
+  toc [TOC OPTION]...
+  All options that can be specified for a page object can also be specified for
+  a toc, further more the options from the TOC Options section can also be
+  applied. The table of content is generated via XSLT which means that it can be
+  styled to look however you want it to look. To get an aide of how to do this
+  you can dump the default xslt document by supplying the
+  --dump-default-toc-xsl, and the outline it works on by supplying
+  --dump-outline, see the Outline Options section.
+
+Description:
+  Converts one or more HTML pages into a PDF document, using wkhtmltopdf patched
+  qt.
+
+Global Options:
+      --collate                       Collate when printing multiple copies                                      (default)
+      --no-collate                    Do not collate when printing multiple                                      copies
+      --copies <number>               Number of copies to print into the pdf                                      file (default 1)
+  -H, --extended-help                 Display more extensive help, detailing                                      less common command switches
+  -g, --grayscale                     PDF will be generated in grayscale
+  -h, --help                          Display help
+      --license                       Output license information and exit
+  -l, --lowquality                    Generates lower quality pdf/ps. Useful to                                      shrink the result document space
+  -O, --orientation <orientation>     Set orientation to Landscape or Portrait                                      (default Portrait)
+  -s, --page-size <Size>              Set paper size to: A4, Letter, etc.                                      (default A4)
+  -q, --quiet                         Be less verbose (default)
+      --read-args-from-stdin          Read command line arguments from stdin
+      --title <text>                  The title of the generated pdf file (The                                      title of the first document is used if not                                      specified)
+  -V, --version                       Output version information and exit
+Page Options:
+      --print-media-type              Use print media-type instead of screen
+      --no-print-media-type           Do not use print media-type instead of                                      screen (default)
+Contact:
+  If you experience bugs or want to request new features please visit 
+  <https://github.com/wkhtmltopdf/wkhtmltopdf/issues>
+
+):
+  
+app/controllers/pages_controller.rb:9:in `block (2 levels) in show'
+app/controllers/pages_controller.rb:4:in `show'
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/karinhendrikse/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.5ms)
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:35:32 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (5213.2ms)
+Completed 200 OK in 5411ms (Views: 5398.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster.pdf?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:35:43 +0200
+Processing by PagesController#show as PDF
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+***************WICKED***************
+  Rendering pages/poster.html.erb
+  Rendered pages/poster.html.erb (2281.6ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data file_name.pdf (2.8ms)
+Completed 200 OK in 27582ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:36:25 +0200
+Started GET "/" for 127.0.0.1 at 2017-07-28 17:36:42 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"home"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 416ms (Views: 401.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:36:46 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (2775.9ms)
+Completed 200 OK in 2826ms (Views: 2825.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/poster.pdf?tumblrSearch=kitten" for 127.0.0.1 at 2017-07-28 17:36:54 +0200
+Processing by PagesController#show as PDF
+  Parameters: {"tumblrSearch"=>"kitten", "page"=>"poster"}
+***************WICKED***************
+  Rendering pages/poster.html.erb
+  Rendered pages/poster.html.erb (2080.8ms)
+  Rendering text template
+  Rendered text template (0.0ms)
+Sent data file_name.pdf (4.0ms)
+Completed 200 OK in 23051ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
