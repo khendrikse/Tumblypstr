@@ -37,7 +37,7 @@ class PagesController < ApplicationController
 
     pictures = Array.new
 
-    until pictures.length >= 70
+    until pictures.length >= 69
       posts = client.tagged tag, :before => @timestamp ,:limit => 50
       @timestamp = posts.last["timestamp"]
       posts.each do |post|
@@ -52,7 +52,7 @@ class PagesController < ApplicationController
       end
     end
 
-    until pictures.length == 70
+    until pictures.length == 69
       pictures.pop
     end
     return pictures

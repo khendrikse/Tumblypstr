@@ -31,7 +31,8 @@
         <% pictures.each do |image| %>
           <%= wicked_pdf_image_tag(image, class: "pictures")%>
         <% end %>
-      </center>
+        </center>
+        <%= wicked_pdf_image_tag("created_with.png", style:"height: 119px; width:119px ;") %>
       </div>
     </div>
   </div>
