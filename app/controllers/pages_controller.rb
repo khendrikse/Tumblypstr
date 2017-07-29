@@ -16,6 +16,7 @@ class PagesController < ApplicationController
         :background => true,
         :dpi => '72',
         :enable_plugins => false,
+        :disable_smart_shrinking => true, 
         margin: { top: '0mm',
                   bottom: '0mm',
                   left: '0mm',
