@@ -4,7 +4,7 @@
     <title>TumblyPstr</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag 'application', 'slideshow', 'normalize', 'skeleton', 'overall_style', media: 'all', 'data-turbolinks-track': 'reload' -%>
+    <%= stylesheet_link_tag 'application', 'slideshow', 'normalize', 'skeleton', 'overall_style', 'poster', media: 'all', 'data-turbolinks-track': 'reload' -%>
     <%= javascript_include_tag 'application', 'text_animation.js', 'data-turbolinks-track': 'reload' %>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
   </head>
@@ -29,8 +29,31 @@
       </div>
     </div>
   </div>
+  <div class="container" id="search_box">
+    <br/><br/>
+    <div class="row">
+      <div class="twelve columns">
+        <div class="ten columns offset-by-one columns">
+          <center>
+          <h1>Create a poster about
+            <span
+            class="txt-rotate"
+            data-period="2000"
+            data-rotate='[ "#harrypotter.", "#danandphil.", "#memes.", "#disney.", "#starwars" ]'></span>
+          </h1>
+          <br/>
+          <h3>What's your&nbsp;&nbsp;
+            <form action="/pages/poster" style="margin: 0; padding: 0; width: 200px; height: 70px; display: inline;">
+              <input style="display: inline; width: 200px; height: 70px;" placeholder=" #Fandom" type="text" name="tumblrSearch">&nbsp;&nbsp;?
+              <br>
+              <button style="display: inline; width: 400px; height: 60px;" type="submit">grab your poster</button>
+            </form>
+            <br/>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
     <%= yield %>
-  <!-- End Document
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
