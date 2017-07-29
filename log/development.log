@@ -13314,3 +13314,19 @@ Sent data file_name.pdf (1.3ms)
 Completed 200 OK in 25266ms (Views: 0.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-29 13:57:37 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (617.9ms)
+Completed 200 OK in 726ms (Views: 703.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-29 13:58:43 +0200
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
