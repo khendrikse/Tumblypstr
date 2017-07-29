@@ -1,0 +1,46 @@
+/* line 1, /Users/karinhendrikse/Projects/DOC2017/TumblyPstr/app/assets/stylesheets/poster.css.scss */
+body {
+  background: #000000;
+}
+
+/* line 5, /Users/karinhendrikse/Projects/DOC2017/TumblyPstr/app/assets/stylesheets/poster.css.scss */
+#pictures_box {
+  position: absolute;
+  margin-top: 25px;
+  z-index: 1;
+  padding-bottom: 18px;
+}
+
+/* line 13, /Users/karinhendrikse/Projects/DOC2017/TumblyPstr/app/assets/stylesheets/poster.css.scss */
+.pictures {
+  float: left;
+  width: 119px;
+  height: 119px;
+  object-fit: cover;
+}
+
+/* line 20, /Users/karinhendrikse/Projects/DOC2017/TumblyPstr/app/assets/stylesheets/poster.css.scss */
+#yay_message {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+/* line 27, /Users/karinhendrikse/Projects/DOC2017/TumblyPstr/app/assets/stylesheets/poster.css.scss */
+#zoekwoord {
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 400px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+  z-index: 2;
+}
+
+/* line 37, /Users/karinhendrikse/Projects/DOC2017/TumblyPstr/app/assets/stylesheets/poster.css.scss */
+#zoekwoord span {
+  background-color: #000000;
+  padding: 20px;
+}
