@@ -159,7 +159,8 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #1EAEDB; }
-
+a:hover {
+  color: #0FA0CE; }
 
 
 /* Buttons
@@ -196,6 +197,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #fff;
+  border: #888;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
