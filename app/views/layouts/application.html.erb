@@ -4,7 +4,7 @@
     <title>TumblyPstr</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%= stylesheet_link_tag 'application', 'slideshow', 'normalize', 'skeleton', 'overall_style', 'poster', media: 'all', 'data-turbolinks-track': 'reload' -%>
+    <%= stylesheet_link_tag 'application','normalize', 'skeleton', 'overall_style', 'poster', 'slideshow', media: 'all', 'data-turbolinks-track': 'reload' -%>
     <%= javascript_include_tag 'application', 'text_animation.js', 'data-turbolinks-track': 'reload' %>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200|Pacifico|Raleway:200,100,400"' rel='stylesheet' type='text/css'>
   </head>
@@ -43,10 +43,18 @@
           </h1>
           <br/>
           <h3>What's your&nbsp;&nbsp;
-            <form action="/pages/poster" style="margin: 0; padding: 0; width: 200px; height: 70px; display: inline;">
-              <input style="display: inline; width: 200px; height: 70px;" placeholder=" #Fandom" type="text" name="tumblrSearch">&nbsp;&nbsp;?
+            <form action="/pages/poster" style="margin: 0; padding: 0; width: 400px; height: 70px; display: inline;">
+              <input style="display: inline; width: 200px; height: 70px;" placeholder=" #Fandom" type="text" name="tumblrSearch">&nbsp;&nbsp;?</h3>
               <br>
-              <button style="display: inline; width: 400px; height: 60px;" type="submit">grab your poster</button>
+              <button style="display: inline; width: auto; height: 60px;" type="submit">1. get your images</button>
+              <% if @search_tag != nil %>
+              <button style="display: inline; width: auto; height: 60px;" type="submit">
+              <%= link_to "2. grab your poster", format: :pdf, :tumblrSearch => @search_tag, :style =>'text-decoration: none;' %>
+              </button>
+              <% else %>
+              <div class="no_pdf">2. grab your poster</div>
+            </div>
+              <% end %>
             </form>
             <br/>
           </center>
