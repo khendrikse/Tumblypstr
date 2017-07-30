@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the README for my first real Ruby on Rails project ever, created during Days of Code in Rotterdam 2017.
 
-Things you may want to cover:
+This web app will search tagged posts on tumblr for images using a search term that the user provides. Then it returns a fully designed pdf A3 poster with images from the search in 72 dpi (otherwise it becomes too slow and Heroku gives me a runtime error).
 
-* Ruby version
+The app is live on www.tumblypstr.nl and can still use some tweaking. 
 
-* System dependencies
+This Ruby on Rails app is built using:
 
-* Configuration
+* Ruby version '2.3.1'
 
-* Database creation
+* Wicked PDF & wkhtmltopdf-binary
 
-* Database initialization
+* Using the Tumblr API
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Awesome people who helped me to learn more.
