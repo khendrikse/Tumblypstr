@@ -14,7 +14,8 @@ body {
   float: left;
   width: 119px;
   height: 119px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #yay_message {
@@ -31,7 +32,7 @@ body {
     margin-top: 400px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
-    font-size: 90px;
+    font-size: 80px;
     z-index: 2;
 }
 #zoekwoord span {
