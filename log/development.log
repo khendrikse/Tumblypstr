@@ -13758,3 +13758,11 @@ Sent data file_name.pdf (4.1ms)
 Completed 200 OK in 18841ms (Views: 3.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-29 18:36:47 +0100
+Processing by PagesController#show as HTML
+  Parameters: {"page"=>"poster"}
+  Rendering pages/poster.html.erb within layouts/application
+  Rendered pages/poster.html.erb within layouts/application (651.8ms)
+Completed 200 OK in 758ms (Views: 742.8ms | ActiveRecord: 0.0ms)
+
+
