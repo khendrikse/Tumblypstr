@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="Docs/tumbly_logo.png" width="200" alt="icon"><br>
+<img src="/docs/tumbly_logo.png" width="200" alt="icon"><br>
   Tumblypstr
 </h1>
 This Ruby on Rails app, using the Tumblr API was created during 10 Days of Code in Rotterdam 2017.
