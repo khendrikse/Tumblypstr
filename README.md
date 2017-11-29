@@ -6,6 +6,8 @@ This Ruby on Rails app, using the Tumblr API was created during 10 Days of Code 
 
 This web app will search tagged posts on Tumblr for images. Then it returns a fully designed pdf A3 poster with images from the search in 72 dpi.
 
+Live version: http://tumblypstr.herokuapp.com
+
 ![Screenshot](/docs/screenshot1.png)
 
 [See more screenshots](#more-screenshots)
