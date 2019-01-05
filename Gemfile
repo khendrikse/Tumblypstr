@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.5.0'
 #use wicked and wkhtmltopdf-binary to generate a pdf
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
