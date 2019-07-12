@@ -3,6 +3,7 @@ ruby '2.5.0'
 #use wicked and wkhtmltopdf-binary to generate a pdf
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem "actionview", ">= 5.0.7.2"
 #use tumblr_client
 gem 'tumblr_client'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
